@@ -1,7 +1,18 @@
 <template>
 	<div>
-		<h2>Homepage</h2>
-		<div v-for="(story, i) in stories" :key="i">{{ story }}</div>
+		<div class="container">
+			<h2>Homepage</h2>
+		
+			<div v-for="(story, i) in stories" :key="i">
+				<h3>{{ story.data.title }}</h3>
+				<p>{{ story.data.url }}</p>
+				<div class="pure-g">
+					<div class="pure-u-1-3"><p>comments: {{ story.data.descendants }}</p></div>
+					<div class="pure-u-1-3"><p>score: {{ story.data.score }}</p></div>
+				</div>			
+			</div>
+		</div>
+		
 	</div>
 </template>
 
