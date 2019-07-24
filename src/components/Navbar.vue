@@ -2,7 +2,8 @@
 	<div class="pure-menu pure-menu-horizontal">
 		<router-link :to="{ path: '/'}" class="pure-menu-heading pure-menu-link">HackerNews</router-link>
 		<ul class="pure-menu-list">
-			<li class="pure-menu-item"><router-link :to="{ path: '/single'}" class="pure-menu-link">Upload</router-link></li>
+			<li class="pure-menu-item"><router-link :to="{ path: '/single'}" class="pure-menu-link">Single</router-link></li>
+			<li class="pure-menu-item"><router-link :to="{ path: '/new'}" class="pure-menu-link">New Stories</router-link></li>
 		</ul>
 	</div>
 </template>
